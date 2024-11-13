@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationality  Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .category-header {
+            background-color: #e0e0e0;
+        }
+        .total {
+            background-color: #dcd7d7;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Nationality  Table</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Age</th>
+        <th colspan="3">Nationals</th>
+        <th colspan="3">Refugees</th>
+        <th colspan="3">Foreigners</th>
+    </tr>
+    <tr class="category-header">
+        <th>Male</th>
+        <th>Female</th>
+        <th>Total</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Total</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Total</th>
+    </tr>
+   <tr>
+        <td>12 YRS OR LESS</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>13</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>14</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>15</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>16</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>17</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>18</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+    <td>19 AND ABOVE</td>
+        <td><input type="number" min="0" class="nationals-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="nationals-female" oninput="calculateTotals()"></td>
+        <td class="nationals-total">0</td>
+        
+        <td><input type="number" min="0" class="refugees-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="refugees-female" oninput="calculateTotals()"></td>
+        <td class="refugees-total">0</td>
+
+        <td><input type="number" min="0" class="foreigners-male" oninput="calculateTotals()"></td>
+        <td><input type="number" min="0" class="foreigners-female" oninput="calculateTotals()"></td>
+        <td class="foreigners-total">0</td>
+    </tr>
+ 
+    <tr class="total">
+        <td>Total</td>
+        <td colspan="2" id="total-nationals">0</td>
+        <td colspan="2" id="total-refugees">0</td>
+        <td colspan="2" id="total-foreigners">0</td>
+    </tr>
+</table>
+
+<script>
+    function calculateTotals() {
+      
+        let nationalsMaleTotal = 0;
+        let nationalsFemaleTotal = 0;
+        let refugeesMaleTotal = 0;
+        let refugeesFemaleTotal = 0;
+        let foreignersMaleTotal = 0;
+        let foreignersFemaleTotal = 0;
+        document.querySelectorAll(".nationals-male").forEach(input => nationalsMaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".nationals-female").forEach(input => nationalsFemaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".refugees-male").forEach(input => refugeesMaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".refugees-female").forEach(input => refugeesFemaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".foreigners-male").forEach(input => foreignersMaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".foreigners-female").forEach(input => foreignersFemaleTotal += parseInt(input.value) || 0);
+        document.querySelectorAll(".nationals-total").forEach(cell => {
+            let row = cell.parentElement;
+            let male = parseInt(row.querySelector(".nationals-male").value) || 0;
+            let female = parseInt(row.querySelector(".nationals-female").value) || 0;
+            cell.textContent = male + female;
+        });
+        document.querySelectorAll(".refugees-total").forEach(cell => {
+            let row = cell.parentElement;
+            let male = parseInt(row.querySelector(".refugees-male").value) || 0;
+            let female = parseInt(row.querySelector(".refugees-female").value) || 0;
+            cell.textContent = male + female;
+        });
+        document.querySelectorAll(".foreigners-total").forEach(cell => {
+            let row = cell.parentElement;
+            let male = parseInt(row.querySelector(".foreigners-male").value) || 0;
+            let female = parseInt(row.querySelector(".foreigners-female").value) || 0;
+            cell.textContent = male + female;
+        });
+        document.getElementById("total-nationals").textContent = nationalsMaleTotal + nationalsFemaleTotal;
+        document.getElementById("total-refugees").textContent = refugeesMaleTotal + refugeesFemaleTotal;
+        document.getElementById("total-foreigners").textContent = foreignersMaleTotal + foreignersFemaleTotal;
+    }
+</script>
+
+</body>
+</html>
